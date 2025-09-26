@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('fall.webp') center/cover no-repeat;
+}
+
+.glass-button {
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+}
