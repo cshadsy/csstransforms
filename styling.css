@@ -1,0 +1,144 @@
+body {
+      background: url("https://www.gifcities.org/assets/bg/tile_starfield.gif");
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: #fff;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #002b5c;
+      padding: 12px;
+      border-bottom: 4px ridge #ccc;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      color: #cce6ff;
+      text-shadow: 1px 1px #000;
+      animation: wiggle 2s infinite;
+      margin: 0;
+    }
+
+    marquee {
+      font-size: 18px;
+      color: #fff;
+      background: #1a1a1a;
+      padding: 6px;
+      border-top: 2px dashed #666;
+      border-bottom: 2px dashed #666;
+    }
+
+    nav {
+      background: #004080;
+      padding: 10px;
+      border-bottom: 3px solid #001a33;
+      text-align: center;
+    }
+
+    nav a {
+      color: #e6f2ff;
+      font-weight: bold;
+      margin: 0 12px;
+      text-decoration: none;
+      font-size: 16px;
+      display: inline-block;
+      transform: scale(1);
+      transition: transform 0.2s;
+    }
+
+    nav a:hover {
+      transform: scale(1.1) rotate(-2deg);
+      text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .effects {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .card {
+      background: rgba(30, 30, 30, 0.95);
+      border: 2px solid #aaa;
+      box-shadow: 3px 3px 0 #000;
+      padding: 15px;
+      width: 420px;
+      text-align: center;
+      animation: floaty 4s infinite ease-in-out;
+    }
+
+.card img {
+  width: 220px;
+  height: 220px;
+  border: 2px solid #ccc;
+  margin-bottom: 12px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #cce6ff;
+  text-decoration: underline;
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.card a {
+  color: #66aaff;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #002b5c;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  border-top: 4px ridge #ccc;
+  font-size: 14px;
+
+  display: inline-flex;    
+  align-items: center;      
+  justify-content: center;  
+  gap: 8px;                 
+}
+
+footer img {
+  width: 88px; 
+  height: 31px; 
+}
+
+
+@keyframes wiggle {
+    0%,100% { transform: rotate(-2deg); }
+    50% { transform: rotate(2deg); }
+}
+
+@keyframes floaty {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
